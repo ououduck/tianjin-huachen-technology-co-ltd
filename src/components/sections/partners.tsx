@@ -57,7 +57,7 @@ export default function Partners() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         // Start speeding up after 200px scroll, max speedup factor of 5
         const speedUpFactor = Math.max(1, Math.min(5, (scrollTop - 200) / 100)); 
-        const baseDuration = 40; // seconds
+        const baseDuration = 4; // seconds
         const newDuration = baseDuration / speedUpFactor;
         scroller.style.setProperty('--animation-duration', `${newDuration}s`);
       }
