@@ -34,17 +34,17 @@ export default function Partners() {
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   const partnerList = [
-    { id: 'google_cloud', name: t('partner_google_cloud'), logo: '/img/googlecloud-color.png' },
-    { id: 'microsoft', name: t('partner_microsoft'), logo: '/img/microsoft-color.png' },
-    { id: 'aliyun', name: t('partner_aliyun'), logo: '/img/alibabacloud-color.png' },
-    { id: 'huaweicloud', name: t('partner_huaweicloud'), logo: '/img/huaweicloud-color.png' },
-    { id: 'aws', name: t('partner_aws'), logo: '/img/aws-color.svg' },
-    { id: 'tencentcloud', name: t('partner_tencentcloud'), logo: '/img/tencentcloud-color.png' },
-    { id: 'cloudflare', name: t('partner_cloudflare'), logo: '/img/cloudflare-color.png' },
-    { id: 'baiducloud', name: t('partner_baiducloud'), logo: '/img/baiducloud-color.png' },
-    { id: 'burncloud', name: t('partner_burncloud'), logo: '/img/burncloud-color.png' },
-    { id: 'tianyi_cloud', name: t('partner_tianyi_cloud'), logo: '/img/statecloud-color.png' },
-    { id: 'siliconcloud', name: t('partner_siliconcloud'), logo: '/img/siliconcloud-color.png' },
+    { id: 'google_cloud', name: t('partner_google_cloud'), logo: '/img/logo/googlecloud-color.png' },
+    { id: 'microsoft', name: t('partner_microsoft'), logo: '/img/logo/microsoft-color.png' },
+    { id: 'aliyun', name: t('partner_aliyun'), logo: '/img/logo/alibabacloud-color.png' },
+    { id: 'huaweicloud', name: t('partner_huaweicloud'), logo: '/img/logo/huaweicloud-color.png' },
+    { id: 'aws', name: t('partner_aws'), logo: '/img/logo/aws-color.svg' },
+    { id: 'tencentcloud', name: t('partner_tencentcloud'), logo: '/img/logo/tencentcloud-color.png' },
+    { id: 'cloudflare', name: t('partner_cloudflare'), logo: '/img/logo/cloudflare-color.png' },
+    { id: 'baiducloud', name: t('partner_baiducloud'), logo: '/img/logo/baiducloud-color.png' },
+    { id: 'burncloud', name: t('partner_burncloud'), logo: '/img/logo/burncloud-color.png' },
+    { id: 'tianyi_cloud', name: t('partner_tianyi_cloud'), logo: '/img/logo/statecloud-color.png' },
+    { id: 'siliconcloud', name: t('partner_siliconcloud'), logo: '/img/logo/siliconcloud-color.png' },
   ];
 
   const firstRow = partnerList.slice(0, Math.ceil(partnerList.length / 2));
@@ -57,7 +57,7 @@ export default function Partners() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         // Start speeding up after 200px scroll, max speedup factor of 5
         const speedUpFactor = Math.max(1, Math.min(5, (scrollTop - 200) / 100)); 
-        const baseDuration = 4; // seconds
+        const baseDuration = 40; // seconds
         const newDuration = baseDuration / speedUpFactor;
         scroller.style.setProperty('--animation-duration', `${newDuration}s`);
       }

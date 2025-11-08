@@ -136,7 +136,7 @@ export const content: Record<string, Record<Locale, string>> = {
   partner_huaweicloud: { en: 'Huawei Cloud', zh: '华为云' },
   partner_aws: { en: 'AWS', zh: '亚马逊云科技' },
   partner_tencentcloud: { en: 'Tencent Cloud', zh: '腾讯云' },
-  partner_cloudflare: { en: 'Cloudflare', zh: 'Cloudflare' },
+  partner_cloudflare: { en: 'Cloudflare', zh: '科赋锐' },
   partner_baiducloud: { en: 'Baidu Cloud', zh: '百度智能云' },
   partner_burncloud: { en: 'BurnCloud', zh: 'BurnCloud' },
   partner_tianyi_cloud: { en: 'Tianyi Cloud', zh: '天翼云' },
