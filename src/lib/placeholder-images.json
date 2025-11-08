@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract blue technology background",
+      "imageUrl": "/1.png",
+      "imageHint": "abstract technology"
+    }
+  ]
+}

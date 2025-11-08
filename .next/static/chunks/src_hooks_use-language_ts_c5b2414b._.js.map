@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///G:/%E6%A1%8C%E9%9D%A2%E6%96%87%E4%BB%B6/www/tianjin-huachen-technology-co-ltd/src/hooks/use-language.ts"],"sourcesContent":["'use client';\n\nimport { useContext } from 'react';\nimport { LanguageContext, type LanguageContextType } from '@/components/providers/language-provider';\n\nexport const useLanguage = (): LanguageContextType => {\n  const context = useContext(LanguageContext);\n  if (!context) {\n    throw new Error('useLanguage must be used within a LanguageProvider');\n  }\n  return context;\n};\n"],"names":[],"mappings":";;;AAEA;AACA;;AAHA;;;AAKO,MAAM,cAAc;;IACzB,MAAM,UAAU,CAAA,GAAA,6JAAA,CAAA,aAAU,AAAD,EAAE,0JAAA,CAAA,kBAAe;IAC1C,IAAI,CAAC,SAAS;QACZ,MAAM,IAAI,MAAM;IAClB;IACA,OAAO;AACT;GANa","debugId":null}}]
+}
